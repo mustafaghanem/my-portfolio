@@ -287,19 +287,7 @@ button {
   background: #322653;
   color: #f3f9fb;
 }
-.contact .contact-us-form .invalid-input {
-  border: 2px solid red;
-}
-#form-submitted-msg {
-  margin-bottom: 3rem;
-  border-radius: 3px;
-  background-color: rgb(67, 161, 67);
-  padding: 0.5rem;
-  width: 40%;
-  text-align: center;
-  color: #fff;
-  display: none;
-}
+
 footer {
   background: #393646;
   height: auto;
