@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="index.js"></script>
+    <title>Mustafa Ghanem</title>
+  </head>
+  <body>
+    <header class="header container">
+      <img class="nav-logo" src="media/logo.svg" alt="logo" />
+      <nav>
+        <ul class="header-menu">
+          <li>
+            <a class="header_links" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header_links" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="header_links" href="#blog">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header-btn" href="#contact">Say Hello</a>
+      <button class="header-bars">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+    </header>
+    <main>
+      <section class="hero container">
+        <h1>Front-End Developer <span>&</span> UI UX Designer</h1>
+        <h2>
+          I design and code simple and beatiful web & mobile applications.
+        </h2>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          id="animation"
+          src="https://lottie.host/e9381adf-955b-43cd-b466-4a192becbeeb/mukcGc2q99.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+      </section>
+      <section id="about" class="about container section">
+        <div class="aboutme hidden">
+          <h2>Hello, I'm Mustafa. It's nice meeting you.</h2>
+          <p>
+            I'm an enthusiastic and dedicated web developer with a passion for
+            creating user-friendly and visually appealing websites. Proficient
+            in HTML, CSS, and JavaScript, I'm eager to utilize my skills to
+            craft immersive digital experiences. With a strong eye for detail
+            and a commitment to staying up-to-date with industry trends, I
+            strive to deliver efficient and responsive web solutions that exceed
+            client expectations.
+          </p>
+        </div>
+      </section>
+      <section id="blog" class="blog container">
+        <div class="my-blog hidden">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            id="coffee"
+            src="https://lottie.host/3dbd5236-d2fb-454a-a199-9ab836b35860/fe9fInRBs7.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+        <div class="blog-txt hidden">
+          <h2>Coffee break with me</h2>
+          <p>
+            My journey began with a strong focus on UI/UX design, which
+            eventually sparked my passion for pursuing a career as a Front End
+            Developer. With a solid foundation in UI/UX design, I delved into
+            the world of CSS and honed my skills in object-oriented programming.
+            Alongside, I cultivated exceptional problem-solving abilities,
+            making me have a well-rounded professional kickstart.
+          </p>
+        </div>
+      </section>
+      <section class="contact container">
+        <div id="form-submitted-msg">Form successfully submitted!</div>
+        <form
+          id="contact-form"
+          class="contact-us-form hidden"
+          action="#"
+          method="POST"
+        >
+          <h2 class="hidden">Say Hello</h2>
+          <label for="name">Name</label>
+          <input
+            name="name"
+            type="text"
+            class="f-input"
+            placeholder="Name"
+            required
+          />
+          <div id="name-error" class="error-msg"></div>
+          <label for="email">Email</label>
+          <input
+            name="email"
+            type="email"
+            class="email-input"
+            placeholder="Email"
+            required
+          />
+          <div id="email-error" class="error-msg"></div>
+          <label for="text">Comment</label>
+          <textarea
+            name="text"
+            class="f-input"
+            placeholder="Comment"
+            required
+          ></textarea>
+          <div id="text-error" class="error-msg"></div>
+          <input
+            type="submit"
+            id="submit-button"
+            class="form-btn"
+            value="SUBMIT"
+            disabled
+          />
+        </form>
+      </section>
+      <section class="project1 hidden">
+        <div class="project-block">
+          <img id="pj-image" src="media/pj.png" alt="Project Image" />
+          <div class="project-content">
+            <h2>Project</h2>
+            <p>
+              Canvas cursor paint project uses HTML, CSS, and JavaScript to
+              create a drawing app where users paint with custom cursors on an
+              HTML canvas.
+            </p>
+            <a href="https://codepen.io/mustafa-ghanem/pen/KKqmpLY" class="btn"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <h2>Connect With Me.</h2>
+        <ul class="social-md">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mustafa-ghanem-160a2623b/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a href="https://codepen.io/mustafa-ghanem" target="_blank"
+              >Codepen</a
+            >
+          </li>
+          <li>
+            <a href="mailto:mustikgnm@gmail.com" target="_blank">Email</a>
+          </li>
+          <li>
+            <a href="https://github.com/mustafaghanem" target="_blank"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-btm">
+        <p>Made by Mustafa Ghanem</p>
+      </div>
+    </footer>
+  </body>
+</html>
